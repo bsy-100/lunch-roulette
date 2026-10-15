@@ -1,0 +1,69 @@
+/* 레트로 게임쇼 테마: 진한 남색 배경, 노랑/빨강 포인트, 굵은 외곽선과 딱딱한 그림자 */
+:root {
+  color-scheme: dark;
+
+  --bg: #14123a;
+  --surface: #262268;
+  --surface-2: #322d82;
+  --input-bg: #0f0d2e;
+  --ink: #0b0a24; /* 외곽선과 그림자 색 */
+  --text: #fff7e0;
+  --muted: #b9b4e6;
+  --border: #4a43a8;
+
+  --yellow: #ffd23f;
+  --red: #ff3b5c;
+  --teal: #2ec4b6;
+  --purple: #7b5cff;
+  --orange: #ff8c42;
+
+  --accent: var(--yellow);
+  --accent-text: #1b1540;
+  --danger: var(--red);
+  --overlay: rgba(6, 5, 24, 0.78);
+
+  --outline: 3px solid var(--ink);
+  --shadow: 4px 4px 0 var(--ink);
+
+  --font-body: 'Pretendard Variable', Pretendard, system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+  --font-display: 'Black Han Sans', 'Pretendard Variable', Pretendard, system-ui, sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(circle at 50% -10%, #3b34a8 0%, transparent 55%),
+    radial-gradient(rgba(255, 255, 255, 0.07) 1.5px, transparent 1.5px);
+  background-size:
+    100% 100%,
+    22px 22px;
+  background-attachment: fixed;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
