@@ -34,7 +34,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 cp .env.example .env        # .env를 열어 DB_PASSWORD를 위에서 정한 비밀번호로 수정
-python create_tables.py     # 테이블 4개 생성
+python create_tables.py     # 테이블 6개 생성
 ```
 
 ### 3. 프론트엔드
