@@ -126,7 +126,8 @@
   - 계정을 `'lunch_app'@'localhost'`가 아니라 `'lunch_app'@'<백엔드 서버 IP>'`로 만들고 `lunch_roulette.*` 권한만 준다.
   - 방화벽/보안그룹에서 3306은 백엔드 서버 IP에만 연다. 백엔드의 8001도 프론트엔드 서버 IP에만 연다.
 - **데이터 이전**: 기존 WSL의 DB를 `mariadb-dump`로 내보내 DB 서버에 가져온다. (또는 `create_tables.py`로 새로 만들고 샘플 데이터를 넣는다.)
-- **README**: 서버별 설치/실행 방법으로 고친다.
+- **배포 안내**: 서버별 설치/실행 방법은 [deploy/](../deploy/README.md)에 정리했다. (DB-SERVER.md, APP-SERVER.md, WEB-SERVER.md, systemd·nginx 설정 파일)
+- **README**: 로컬 개발용 실행 방법은 그대로 두고, 서버 배포는 deploy/로 안내한다.
 
 ## 5. 작업 순서
 
